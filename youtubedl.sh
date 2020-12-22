@@ -70,15 +70,16 @@ echo -e $Y $L "Getting config file..."$G "Ak500" $N
 
 echo -e $Y $L "Creating bin folder..." $N
 		mkdir ~/bin
+		clear
 sleep 1.5
 
 echo -e $Y $L "Getting files..."$G "Ak500" $N
 		wget https://raw.githubusercontent.com/ak500k/termux-ydl/master/termux-url-opener -P /data/data/com.termux/files/home/bin
 		clear
 		
-echo -e $Y $L "Finishing configuration..." $N
+echo -e $Y $L "Finishing configuration..."$G "Ak500" $N
 sleep 5
 
-echo -e $G"Installation Finished..."$G "Ak500" $N
+echo -e $G"Installation Finished..." $N
 
 kill -1 $PPID
