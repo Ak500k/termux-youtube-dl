@@ -15,8 +15,26 @@ N='\e[0m' > /dev/null 2>&1; # Null
 L='\033[7m' > /dev/null 2>&1; #Lines
 X='\033[0m' > /dev/null 2>&1; #Closer
 # ----------------------------------------
+clear
+echo "------------------------------------------------\n"
 
+echo -e $R"        _    _    ____   ___   ___"$N
+sleep 0.3
+echo -e $R"       / \  | | _| ___| / _ \ / _ \ "$N
+sleep 0.3
+echo -e $R"      / _ \ | |/ /___ \| | | | | | |"$N
+sleep 0.3
+echo -e $R"     / ___ \|   < ___) | |_| | |_| |"$N
+sleep 0.3
+echo -e $R"    /_/   \_\_|\_\____/ \___/ \___/"$N
+
+echo "\n"
+echo "------------------------------------------------\n"
+sleep 1.5
+
+echo $Y$L"\n Updating... \n"$N
 apt update -y
+
 clear
 
 
@@ -32,54 +50,73 @@ echo -e $R"  |_|\___/ \__,_|\__|\__,_|_.__/ \___|____/|_____|" $N
 
 sleep 1.5
 
-echo $Y$L" YouTube-dl Installer By " $R" Ak500 "$N
 
-echo $Y$L" Installing python... "$N
+echo $Y$L"\n YouTube-dl Installer By " $R" Ak500 \n"$N
 
-		pkg install python -y
-		clear
+echo $Y$L"\n Installing python... "$N
 
-echo $Y$L" Installing ffmpeg... " $G" Ak500 "$N
+		apt install python -y
+sleep 0.2		
+
+echo $Y$L"\n Installing ffmpeg... \n"$N
 
 		apt install ffmpeg -y
-		apt update -y
-		clear
+sleep 0.2		
 
-echo $Y$L" Installing wget... " $G" Ak500 "$N
+echo $Y$L"\n Installing wget... \n"$N
 
 		pkg install wget -y
 
-echo $Y $L" Installing YouTube-dl... " $N 
+sleep 0.2
+
+echo $Y$L"\n Installing YouTube-dl... \n"$N 
 
 		pip install youtube-dl
-		clear
 
-echo $Y$L" Setting up configs..." $G" Ak500 "$N
+clear
+
+echo $Y$L"\n Setting up configs... " $G" Ak500 \n"$N
+
 sleep 2
 
-echo $Y$L " Creating Youtube folder... "$N
-		mkdir /data/data/com.termux/files/home/storage/shared/Youtube
+echo $Y$L"\n Creating Youtube folder... \n"$N
+
+mkdir /data/data/com.termux/files/home/storage/shared/Youtube
+	
 sleep 1.5
 
-echo $Y$L " Creating youtube-dl config... "$N
+
+echo $Y$L"\n Creating youtube-dl config... \n"$N
 		mkdir -p ~/.config/youtube-dl
 sleep 1.5
 
-echo $Y$L" Getting config file... " $G" Ak500 "$N
-		wget https://raw.githubusercontent.com/ak500k/termux-ydl/master/config -P /data/data/com.termux/files/home/.config/youtube-dl
+echo $Y$L"\n Getting config file... \n"$N
 
-echo $Y $L "Creating bin folder..." $N
+wget https://raw.githubusercontent.com/ak500k/termux-ydl/master/config -P /data/data/com.termux/files/home/.config/youtube-dl
+
+echo $Y$L"\n Creating bin folder... \n"$N
+
 		mkdir ~/bin
-		clear
+
 sleep 1.5
 
-echo $Y$L" Getting files... " $G" Ak500 "$N
-		wget https://raw.githubusercontent.com/ak500k/termux-ydl/master/termux-url-opener -P /data/data/com.termux/files/home/bin
-		clear
-		
-echo $Y $L " Finishing configuration... " $G " Ak500 "$N
-sleep 5
+echo $Y$L"\n Getting files... \n"$N
 
-echo $G" Installation Finished... " $N
+wget https://raw.githubusercontent.com/ak500k/termux-ydl/master/termux-url-opener -P /data/data/com.termux/files/home/bin
+	
+clear
+
+
+echo $Y$L"\n Updating System... \n"$N
+
+                apt update && apt upgrade -y
+                apt --fix-broken install
+		clear
+
+echo $Y$L"\n Finishing configuration... " $G" Ak500 \n"$N
+
+sleep 3.5
+
+echo $G"\n   Installation Finished... \n"$N
 
 kill -1 $PPID
