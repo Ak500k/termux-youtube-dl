@@ -51,7 +51,7 @@
  sleep 1.5
 
 
- echo $Y$L"\n YouTube-dl Installer By " $R" Ak500 \n"$N
+ echo -e $Y$L"\n YouTube-dl Installer By " $R" Ak500 \n"$N
 
  echo $Y$L"\n Installing python... "$N
 
