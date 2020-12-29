@@ -16,7 +16,7 @@
  X='\033[0m' > /dev/null 2>&1; #Closer
 # ----------------------------------------
  clear
- echo "------------------------------------------------\n"
+ echo -e "------------------------------------------------\n"
 
  echo -e $R"        _    _    ____   ___   ___"$N
  sleep 0.3
@@ -28,11 +28,10 @@
  sleep 0.3
  echo -e $R"    /_/   \_\_|\_\____/ \___/ \___/"$N
 
- echo "\n"
- echo "------------------------------------------------\n"
+ echo -e "\n------------------------------------------------\n"
  sleep 1.5
 
- echo $Y$L"\n Updating... \n"$N
+ echo -e $Y$L"\n Updating... \n"$N
  apt update -y
 
  clear
@@ -53,70 +52,70 @@
 
  echo -e $Y$L"\n YouTube-dl Installer By " $R" Ak500 \n"$N
 
- echo $Y$L"\n Installing python... "$N
+ echo -e $Y$L"\n Installing python... "$N
 
 		apt install python -y
  sleep 0.2		
 
- echo $Y$L"\n Installing ffmpeg... \n"$N
+ echo -e $Y$L"\n Installing ffmpeg... \n"$N
 
 		apt install ffmpeg -y
  sleep 0.2		
 
- echo $Y$L"\n Installing wget... \n"$N
+ echo -e $Y$L"\n Installing wget... \n"$N
 
 		pkg install wget -y
 
  sleep 0.2
 
- echo $Y$L"\n Installing YouTube-dl... \n"$N 
+ echo -e $Y$L"\n Installing YouTube-dl... \n"$N 
 
 		pip install youtube-dl
 
  clear
 
- echo $Y$L"\n Setting up configs... " $G" Ak500 \n"$N
+ echo -e $Y$L"\n Setting up configs... " $G" Ak500 \n"$N
 
  sleep 2
 
- echo $Y$L"\n Creating Youtube folder... \n"$N
+ echo -e $Y$L"\n Creating Youtube folder... \n"$N
 
  mkdir /data/data/com.termux/files/home/storage/shared/Youtube
 	
  sleep 1.5
 
 
- echo $Y$L"\n Creating youtube-dl config... \n"$N
+ echo -e $Y$L"\n Creating youtube-dl config... \n"$N
 		mkdir -p ~/.config/youtube-dl
  sleep 1.5
 
- echo $Y$L"\n Getting config file... \n"$N
+ echo -e $Y$L"\n Getting config file... \n"$N
 
  wget https://raw.githubusercontent.com/ak500k/termux-ydl/master/config -P /data/data/com.termux/files/home/.config/youtube-dl
 
- echo $Y$L"\n Creating bin folder... \n"$N
+ echo -e $Y$L"\n Creating bin folder... \n"$N
 
 		mkdir ~/bin
 
  sleep 1.5
 
- echo $Y$L"\n Getting files... \n"$N
+ echo -e $Y$L"\n Getting files... \n"$N
 
  wget https://raw.githubusercontent.com/ak500k/termux-ydl/master/termux-url-opener -P /data/data/com.termux/files/home/bin
 	
  clear
 
 
- echo $Y$L"\n Updating System... \n"$N
+ echo -e $Y$L"\n Updating System... \n"$N
 
                 apt update && apt upgrade -y
                 apt --fix-broken install
 		clear
 
- echo $Y$L"\n Finishing configuration... " $G" Ak500 \n"$N
+ echo -e $Y$L"\n Finishing configuration... " $G" Ak500 \n"$N
 
  sleep 3.5
 
- echo $G"\n   Installation Finished... \n"$N
+ echo -e $G"\n   Installation Finished... \n"$N
 
  kill -1 $PPID
