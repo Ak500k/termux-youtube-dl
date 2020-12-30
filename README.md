@@ -18,7 +18,7 @@
        clear; curl -s -L https://bit.ly/3haiM4V | bash
 
 
-# The process will automatically start.
+# and wait the process to finish .
 
 
 
