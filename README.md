@@ -23,9 +23,9 @@
 
 
 
-# How to Use and download youtube playlist/video :-
+# How to Use, and download youtube playlist/videos :-
 
-1) Open YouTube playlist/video
+1) Open YouTube playlist/videos
 2) Click on share button
 3) Now, select Termux
 
