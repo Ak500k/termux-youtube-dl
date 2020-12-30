@@ -23,7 +23,7 @@
 
 
 
-# How to Use, and download youtube playlist/videos :-
+# How to use it to download youtube playlist/videos :
 
 1) Open YouTube playlist/videos
 2) Click on share button
