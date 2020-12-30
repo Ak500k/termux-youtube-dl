@@ -29,4 +29,4 @@
 2) Click on share button
 3) Now, select Termux
 
-# you can see your downloaded playlist/video in "Youtube" folder of your internal storage.
+# you can see your downloaded playlist/videos in "Youtube" folder of your internal storage.
