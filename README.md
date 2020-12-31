@@ -15,7 +15,7 @@
 # 2nd : copy and run this command:
 
 
-       clear; curl -s -L https://bit.ly/3haiM4V | bash
+       clear; curl -s -L https://bit.ly/382z4df | bash
 
 
 # and wait the process to finish .
