@@ -32,7 +32,7 @@
  sleep 1.5
 
  echo -e $Y$L"\n Updating... \n"$N
- apt update -y
+ apt update && apt upgrade -y
 
  clear
 
@@ -68,7 +68,7 @@ echo -e "\n\n-----------------------------------------------------------"
 
  echo -e $Y$L"\n Installing wget... \n"$N
 
-		pkg install wget -y
+		 install wget -y
 
  sleep 0.2
 
