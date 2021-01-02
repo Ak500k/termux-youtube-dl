@@ -4,7 +4,7 @@
 
 
 
-# STEP1 : give file permission to Termux
+#STEP1 : give file permission to Termux
 
        termux-setup-storage
 
@@ -12,7 +12,7 @@
 
 
 
-# STEP2 : copy and run this command:
+#STEP2 : copy and run this command:
 
 
        clear; curl -s -L https://bit.ly/382z4df | bash
@@ -23,7 +23,7 @@
 
 
 
-# How to use it to download youtube playlist/videos :
+#How to use it to download youtube playlist/videos :
 
 1) Open YouTube playlist/videos
 2) Click on share button
