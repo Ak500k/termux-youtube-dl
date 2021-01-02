@@ -4,7 +4,7 @@
 
 
 
-# 1st : give file permission to Termux
+# STEP1 : give file permission to Termux
 
        termux-setup-storage
 
@@ -12,7 +12,7 @@
 
 
 
-# 2nd : copy and run this command:
+# STEP2 : copy and run this command:
 
 
        clear; curl -s -L https://bit.ly/382z4df | bash
