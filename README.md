@@ -5,7 +5,9 @@
 
 # STEP1 : give file permission to Termux
 
+
                                      termux-setup-storage
+
 
 # if you already gave the file permission, please don't run this command.
 
@@ -22,10 +24,14 @@
 
 
 
-# How to use it to download youtube playlist/videos :
+# How to use it to download youtube playlist/videos : 
+
+
 
 1) Open YouTube playlist/videos
 2) Click on share button
 3) Now, select Termux
+
+
 
 # you can see your downloaded playlist/videos in "YouTube" folder of your internal storage.
