@@ -84,7 +84,7 @@ echo -e "\n\n--------------------------------------------------------"
 
  echo -e $Y$L"\n Creating Youtube folder... \n"$N
 
- mkdir /data/data/com.termux/files/home/storage/shared/Youtube
+ mkdir /data/data/com.termux/files/home/storage/shared/YouTube
 	
  sleep 1.5
 
