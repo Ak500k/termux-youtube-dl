@@ -6,7 +6,7 @@
 # STEP1 : give file permission to Termux
 
 
-                                     termux-setup-storage
+                                 termux-setup-storage
 
 
 # if you already gave the file permission, please don't run this command.
