@@ -103,23 +103,23 @@ echo -e "\n\n--------------------------------------------------------"
 
  sleep 1.5
 
- echo -e $Y$L"\n Getting files... \n"$N
+ echo -e $Y$L"\n Getting files...\n"$N
 
  wget https://raw.githubusercontent.com/ak500k/termux-ydl/master/termux-url-opener -P /data/data/com.termux/files/home/bin
 	
  clear
 
 
- echo -e $Y$L"\n Updating System... \n"$N
+ echo -e $Y$L"\n Updating System...\n"$N
 
                 apt update && apt upgrade -y
                 apt --fix-broken install
 		clear
 
- echo -e $Y$L"\n Finishing configuration... " $G" Ak500 \n"$N
+ echo -e $Y$L"\n Finishing configuration..." $G" Ak500 \n"$N
 
  sleep 3.5
 
- echo -e $G"\n   Installation Finished... \n"$N
+ echo -e $G"\n   Installation Finished...\n"$N
 
  kill -1 $PPID
