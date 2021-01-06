@@ -58,17 +58,17 @@ echo -e "\n\n--------------------------------------------------------"
 
  echo -e $Y$L"\n Installing python... "$N
 
-		apt install python -y
+		apt install python
  sleep 0.2		
 
  echo -e $Y$L"\n Installing ffmpeg... \n"$N
 
-		apt install ffmpeg -y
+		apt install ffmpeg
  sleep 0.2		
 
  echo -e $Y$L"\n Installing wget... \n"$N
 
-		 install wget -y
+		 install wget
 
  sleep 0.2
 
