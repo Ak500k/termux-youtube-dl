@@ -68,7 +68,7 @@ echo -e "\n\n--------------------------------------------------------"
 
  echo -e $Y$L"\n Installing wget... \n"$N
 
-		 install wget
+		 apt install wget 
 
  sleep 0.2
 
