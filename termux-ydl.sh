@@ -69,6 +69,13 @@ echo -e "\n\n--------------------------------------------------------"
  echo -e $Y$L"\n Installing wget... \n"$N
 
 		 apt install wget -y
+		 
+		 
+echo -e $Y$L"\n Updating System...\n"$N
+
+                apt update && apt upgrade -y
+                apt --fix-broken install
+		clear
 
  sleep 0.2
 
@@ -108,13 +115,6 @@ echo -e "\n\n--------------------------------------------------------"
  wget https://raw.githubusercontent.com/ak500k/termux-ydl/master/termux-url-opener -P /data/data/com.termux/files/home/bin
 	
  clear
-
-
- echo -e $Y$L"\n Updating System...\n"$N
-
-                apt update && apt upgrade -y
-                apt --fix-broken install
-		clear
 
  echo -e $Y$L"\n Finishing configuration..." $G" Ak500 \n"$N
 
