@@ -102,7 +102,7 @@ echo -e $Y$L"\n Updating System...\n"$N
 
  echo -e $Y$L"\n Getting config file... \n"$N
 
- wget https://raw.githubusercontent.com/ak500k/termux-ydl/master/config -P /data/data/com.termux/files/home/.config/youtube-dl
+ wget https://raw.githubusercontent.com/Ak500k/termux-ydl/main/config -P /data/data/com.termux/files/home/.config/youtube-dl
 
  echo -e $Y$L"\n Creating bin folder... \n"$N
 
@@ -112,7 +112,7 @@ echo -e $Y$L"\n Updating System...\n"$N
 
  echo -e $Y$L"\n Getting files...\n"$N
 
- wget https://raw.githubusercontent.com/ak500k/termux-ydl/master/termux-url-opener -P /data/data/com.termux/files/home/bin
+ wget https://raw.githubusercontent.com/Ak500k/termux-ydl/main/termux-url-opener -P /data/data/com.termux/files/home/bin
 	
  clear
 
