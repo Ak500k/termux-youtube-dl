@@ -4,7 +4,7 @@
 
 # STEP1 : upgrade your Termux 
     
-           apt upgrade
+                 apt upgrade
 
 
 # STEP2 : give file permission to Termux
