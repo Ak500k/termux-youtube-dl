@@ -73,7 +73,7 @@ echo -e "\n\n--------------------------------------------------------"
 		 
 echo -e $Y$L"\n Updating System...\n"$N
 
-                pkg update && apt upgrade
+                pkg update && apt upgrade -y
                 pkg --fix-broken install
 		clear
 
