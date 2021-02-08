@@ -106,6 +106,10 @@ echo -e $Y$L"\n Updating System...\n"$N
  echo -e $Y$L"\n Getting config file... \n"$N
 
  wget https://raw.githubusercontent.com/Ak500k/termux-ydl/main/config -P /data/data/com.termux/files/home/.config/youtube-dl
+ 
+ chmod +x config
+
+ sleep 1
 
  echo -e $Y$L"\n Creating bin folder... \n"$N
 
@@ -116,7 +120,8 @@ echo -e $Y$L"\n Updating System...\n"$N
  echo -e $Y$L"\n Getting files...\n"$N
 
  wget https://raw.githubusercontent.com/Ak500k/termux-ydl/main/termux-url-opener -P /data/data/com.termux/files/home/bin
-	
+ chmod +x termux-url-opener
+ 	
  clear
 
  echo -e $Y$L"\n Finishing configuration..." $G" Ak500 \n"$N
