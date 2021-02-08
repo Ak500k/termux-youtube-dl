@@ -63,7 +63,7 @@ echo -e "\n\n--------------------------------------------------------"
 
  echo -e $Y$L"\n Installing ffmpeg... \n"$N
 
-		pkg install ffmpeg
+		pkg install ffmpeg -y
 		
 
 echo -e $Y$L"\n Updating System...\n"$N
@@ -77,7 +77,7 @@ echo -e $Y$L"\n Updating System...\n"$N
 
  echo -e $Y$L"\n Installing wget... \n"$N
 
-		 pkg install wget
+		 pkg install wget -y
 		 clear
 
  sleep 0.2
