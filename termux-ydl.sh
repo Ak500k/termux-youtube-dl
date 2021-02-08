@@ -64,18 +64,21 @@ echo -e "\n\n--------------------------------------------------------"
  echo -e $Y$L"\n Installing ffmpeg... \n"$N
 
 		pkg install ffmpeg
- sleep 0.2		
+		
 
- echo -e $Y$L"\n Installing wget... \n"$N
-
-		 pkg install wget
-		 
-		 
 echo -e $Y$L"\n Updating System...\n"$N
 
                 pkg update && apt upgrade -y
                 apt --fix-broken install
 		clear
+
+
+ sleep 0.2		
+
+ echo -e $Y$L"\n Installing wget... \n"$N
+
+		 pkg install wget
+		 clear
 
  sleep 0.2
 
