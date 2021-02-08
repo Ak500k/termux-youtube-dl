@@ -59,11 +59,13 @@ echo -e "\n\n--------------------------------------------------------"
  echo -e $Y$L"\n Installing python... "$N
 
 		apt install python -y
+		clear
  sleep 0.2		
 
  echo -e $Y$L"\n Installing ffmpeg... \n"$N
 
 		pkg install ffmpeg -y
+		clear
 		
 
 echo -e $Y$L"\n Updating System...\n"$N
@@ -107,6 +109,7 @@ echo -e $Y$L"\n Updating System...\n"$N
 
  wget https://raw.githubusercontent.com/Ak500k/termux-ydl/main/config -P /data/data/com.termux/files/home/.config/youtube-dl
  
+ cd /data/data/com.termux/files/home/.config/youtube-dl
  chmod +x config
 
  sleep 1
@@ -120,6 +123,8 @@ echo -e $Y$L"\n Updating System...\n"$N
  echo -e $Y$L"\n Getting files...\n"$N
 
  wget https://raw.githubusercontent.com/Ak500k/termux-ydl/main/termux-url-opener -P /data/data/com.termux/files/home/bin
+ 
+ cd /data/data/com.termux/files/home/bin
  chmod +x termux-url-opener
  	
  clear
