@@ -32,7 +32,7 @@
  sleep 1.5
 
  echo -e $Y$L"\n Updating... \n"$N
- apt update && apt upgrade -y
+ apt update && apt upgrade -Y
 
  clear
 
@@ -58,22 +58,22 @@ echo -e "\n\n--------------------------------------------------------"
 
  echo -e $Y$L"\n Installing python... "$N
 
-		apt install python -y
+		apt install python -Y
  sleep 0.2		
 
  echo -e $Y$L"\n Installing ffmpeg... \n"$N
 
-		apt install ffmpeg -y
+		apt install ffmpeg -Y
  sleep 0.2		
 
  echo -e $Y$L"\n Installing wget... \n"$N
 
-		 apt install wget -y
+		 apt install wget -Y
 		 
 		 
 echo -e $Y$L"\n Updating System...\n"$N
 
-                apt update && apt upgrade -y
+                apt update && apt upgrade -Y
                 apt --fix-broken install
 		clear
 
