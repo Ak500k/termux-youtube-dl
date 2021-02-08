@@ -32,7 +32,7 @@
  sleep 1.5
 
  echo -e $Y$L"\n Updating... \n"$N
- pkg update && apt upgrade -Y
+ pkg update && apt upgrade -y
 
  clear
 
