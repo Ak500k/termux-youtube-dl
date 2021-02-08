@@ -4,7 +4,7 @@
 
 # STEP1 : upgrade your Termux 
     
-                 pkg upgrade
+                 pkg upgrade -y
 
 
 # STEP2 : give file permission to Termux
