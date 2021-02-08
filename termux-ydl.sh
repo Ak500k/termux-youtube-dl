@@ -58,22 +58,22 @@ echo -e "\n\n--------------------------------------------------------"
 
  echo -e $Y$L"\n Installing python... "$N
 
-		pkg install python -Y
+		pkg install python
  sleep 0.2		
 
  echo -e $Y$L"\n Installing ffmpeg... \n"$N
 
-		pkg install ffmpeg -Y
+		pkg install ffmpeg
  sleep 0.2		
 
  echo -e $Y$L"\n Installing wget... \n"$N
 
-		 pkg install wget -Y
+		 pkg install wget
 		 
 		 
 echo -e $Y$L"\n Updating System...\n"$N
 
-                pkg update && apt upgrade -Y
+                pkg update && apt upgrade
                 pkg --fix-broken install
 		clear
 
