@@ -58,7 +58,7 @@ echo -e "\n\n--------------------------------------------------------"
 
  echo -e $Y$L"\n Installing python... "$N
 
-		pkg install python
+		pkg install python -y
  sleep 0.2		
 
  echo -e $Y$L"\n Installing ffmpeg... \n"$N
