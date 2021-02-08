@@ -74,7 +74,7 @@ echo -e "\n\n--------------------------------------------------------"
 echo -e $Y$L"\n Updating System...\n"$N
 
                 pkg update && apt upgrade -y
-                pkg --fix-broken install
+                apt --fix-broken install
 		clear
 
  sleep 0.2
