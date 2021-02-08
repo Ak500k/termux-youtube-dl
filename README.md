@@ -2,7 +2,7 @@
 # By Ak500
 
 
-#STEP1 : upgrade your Termux 
+# STEP1 : upgrade your Termux 
     
            apt upgrade
 
