@@ -96,7 +96,7 @@ echo -e $Y$L"\n Updating System...\n"$N
 
  echo -e $Y$L"\n Creating Youtube folder... \n"$N
 
- mkdir /data/data/com.termux/files/home/storage/shared/YouTube
+ mkdir /data/data/com.termux/files/home/storage/shared/Youtube
 	
  sleep 1.5
 
