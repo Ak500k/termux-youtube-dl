@@ -4,19 +4,25 @@
 
 ## STEP1 : upgrade your Termux 
 
-```pkg upgrade -y```
+```
+pkg upgrade -y
+```
 
 
 ## STEP2 : give file permission to Termux
 
-```termux-setup-storage```
+```
+termux-setup-storage
+```
 
 ### if you already gave the file permission, please don't run this command.
 
 
 ## STEP3 : copy and run this command:
 
-```clear; curl -s -L https://bit.ly/39XXwxm | bash```
+```
+clear; curl -s -L https://bit.ly/39XXwxm | bash
+```
 
 ### and wait the process to finish .
 
