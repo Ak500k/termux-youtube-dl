@@ -15,7 +15,7 @@ pkg upgrade -y
 termux-setup-storage
 ```
 
-### if you already gave the file permission, please don't run this command.
+#### if you already gave the file permission, please don't run this command.
 
 
 ## STEP3 : copy and run this command:
@@ -24,7 +24,7 @@ termux-setup-storage
 clear; curl -s -L https://bit.ly/39XXwxm | bash
 ```
 
-### and wait the process to finish .
+#### and wait the process to finish .
 
 
 ## How to use it to download youtube playlist/videos : 
@@ -37,4 +37,4 @@ clear; curl -s -L https://bit.ly/39XXwxm | bash
 ```
 
 
-## you can see your downloaded playlist/videos in "YouTube" folder of your internal storage.
+### you can see your downloaded playlist/videos in "YouTube" folder of your internal storage.
