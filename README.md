@@ -1,5 +1,4 @@
-# termux-ydl
-# By Ak500
+# termux-ydl By Ak500
 
 
 ## STEP1 : upgrade your Termux 
