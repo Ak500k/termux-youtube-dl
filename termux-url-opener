@@ -21,6 +21,8 @@ echo -e "\e[032m" "╠═▶ 6. Video 2160p"
 echo -e "\e[032m" "╠═▶ 7. Exit Termux-YDL" 
 
 printf "\e[032m ╚═:➤  $color"
+while :
+do
 
   read INPUT_STRING
   case $INPUT_STRING in
@@ -61,6 +63,7 @@ printf "\e[032m ╚═:➤  $color"
 		
 	  *)
 	     
-	    echo "\e[031m Please choose an option!\n$color"
+	    echo -e "\e[031m \n Worng input! Please Enter again::\n$color"
 		;;
   esac
+  done
