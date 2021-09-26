@@ -1,6 +1,6 @@
 # termux-ydl By <a href="https://github.com/Ak500k"> Ak500 </a>
 
-- <a href="https://f-droid.org/repo/com.termux_117.apk" title="Download Termux" style="background-color:#FFFFFF;color:#000000;text-decoration:none"> Download Termux </a>
+# - <a href="https://f-droid.org/repo/com.termux_117.apk" title="Download Termux" style="background-color:#FFFFFF;color:#000000;text-decoration:none"> Download Termux </a>
 
 ### STEP1 : upgrade your Termux 
 
