@@ -40,7 +40,6 @@ do
     	youtube-dl $1
 		;;
 		
-		;;
 	  3) 
 		echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f 'bestvideo[height<=480][ext=mp4]+bestaudio[ext=m4a]'" > ~/.config/youtube-dl/config #option 1
     	youtube-dl $1
