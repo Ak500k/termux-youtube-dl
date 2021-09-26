@@ -8,10 +8,10 @@ BL='\e[01;90m' > /dev/null 2>&1; # Black
 R='\e[01;91m' > /dev/null 2>&1; # Red
 G='\e[01;92m' > /dev/null 2>&1; # Green
 Y='\e[01;93m' > /dev/null 2>&1; # Yellow
-B='\e[01;94m' > /dev/null 2>&1; # Blue
+B='\e[01;0m' > /dev/null 2>&1; # Blue
 P='\e[01;95m' > /dev/null 2>&1; # Purple
 C='\e[01;96m' > /dev/null 2>&1; # Cyan
-W='\e[01;97m' > /dev/null 2>&1; # White
+W='\e[01;0m' > /dev/null 2>&1; # White
 LG='\e[01;37m' > /dev/null 2>&1; # Light Gray
 N='\e[0m' > /dev/null 2>&1; # Null
 L='\033[7m' > /dev/null 2>&1; #Lines
@@ -24,81 +24,82 @@ echo -e $R"            / \ / \ / \ / \ / \ "$N
 echo -e $R"           ( A | k | 5 | 0 | 0 )"$N
 echo -e $R"            \_/ \_/ \_/ \_/ \_/ "$N
 
-echo -e $C "╔════════════════════════════════════════╗"                                                                          
-echo -e $G "║ => Project Name : Termux-YDL            ║"
-echo -e $G "║ => Author : Ak500                       ║"
-echo -e $G "║ => Github : g̲i̲t̲h̲u̲b̲.̲c̲o̲m̲/̲ak500k/̲          ║"
+echo -e $C "╔════════════════════════════════════════╗"
+echo -e $G "║ ==> Project Name : Termux-YDL           ║"
+echo -e $G "║ ==> Author : Ak500                      ║"
+echo -e $G "║ ==> Github : github.com/ak500k          ║"
 echo -e $C "╠════════════════════════════════════════╝"
-echo -e $C "╠═▶ [𝗦𝗲𝗹𝗲𝗰𝘁 𝗔 𝗙𝗼𝗿𝗺𝗮𝘁]  ➳"
-echo -e $G "╠═▶ 1. Music Mp3♫"
-echo -e $G "╠═▶ 2. Video 360p"
-echo -e $G "╠═▶ 3. Video 480p"
-echo -e $G "╠═▶ 4. Video 720p"
-echo -e $G "╠═▶ 5. Video 1080p"
-echo -e $G "╠═▶ 6. Video 2160p"
-echo -e $G "╠═▶ 7. Exit Termux-YDL" 
-
-printf "$G ╚═:➤  $color"
+echo -e $C "╠═▶ [ Select Format:: ]"
+echo -e $G "╠═▶ [1] Music Mp3♫"
+echo -e $G "╠═▶ [2] Video 360p"
+echo -e $G "╠═▶ [3] Video 480p"
+echo -e $G "╠═▶ [4] Video 720p"
+echo -e $G "╠═▶ [5] Video 1080p"
+echo -e $G "╠═▶ [6] Video 2160p"
+echo -e $G "╠═▶ [7] Exit Termux-YDL"
+echo -e $G "╠"
+printf "$G ╚═➤  $W"
 while :
 do
-
-  read INPUT_STRING
-  case $INPUT_STRING in
-
-	  1)
-		echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestaudio[ext=m4a]\" --audio-format mp3\"" > ~/.config/youtube-dl/config
-    	youtube-dl $1
-        echo -e $G"\n   Finished...\n"$N
-        sleep 1
-        exit
-		;;
-
-	  2)
-
-		echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=360][ext=mp4]+bestaudio[ext=m4a]\"" > ~/.config/youtube-dl/config
-    	youtube-dl $1
-        echo -e $G"\n   Finished...\n"$N
-        sleep 1
-        exit
-		;;
-		
-	  3) 
-		echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=480][ext=mp4]+bestaudio[ext=m4a]\"" > ~/.config/youtube-dl/config
-    	youtube-dl $1
-        echo -e $G"\n   Finished...\n"$N
-        sleep 1
-        exit
-		;;
-  	  4) 
-		echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]\"" > ~/.config/youtube-dl/config
-    	youtube-dl $1
-        echo -e $G"\n   Finished...\n"$N
-        sleep 1
-        exit
-		;;
-	
-	  5)
-		echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]\"" >/.config/youtube-dl/config
-    	youtube-dl $1
-        echo -e $G"\n   Finished...\n"$N
-        sleep 1
-        exit
-		;;
-
-	  6)
-		echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=2160][ext=mp4]+bestaudio[ext=m4a]\"" > ~/.config/youtube-dl/config
-    	youtube-dl $1
-        echo -e $G"\n   Finished...\n"$N
-        sleep 1
-        exit
-		;;
-
-	  7) 
-		break
+    
+    read INPUT_STRING
+    case $INPUT_STRING in
+        
+        1)
+            echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestaudio[ext=m4a]\" --audio-format mp3\"" > ~/.config/youtube-dl/config
+            youtube-dl $1
+            echo -e $G"\n   Finished...\n"$N
+            sleep 1
+            exit
         ;;
-		
-	  *)
-	     
-	    echo -e "\e[031m \n Worng input! Please Enter again::\n$color"
-  esac
+        
+        2)
+            
+            echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=360][ext=mp4]+bestaudio[ext=m4a]\"" > ~/.config/youtube-dl/config
+            youtube-dl $1
+            echo -e $G"\n   Finished...\n"$N
+            sleep 1
+            exit
+        ;;
+        
+        3)
+            echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=480][ext=mp4]+bestaudio[ext=m4a]\"" > ~/.config/youtube-dl/config
+            youtube-dl $1
+            echo -e $G"\n   Finished...\n"$N
+            sleep 1
+            exit
+        ;;
+        4)
+            echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]\"" > ~/.config/youtube-dl/config
+            youtube-dl $1
+            echo -e $G"\n   Finished...\n"$N
+            sleep 1
+            exit
+        ;;
+        
+        5)
+            echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]\"" >/.config/youtube-dl/config
+            youtube-dl $1
+            echo -e $G"\n   Finished...\n"$N
+            sleep 1
+            exit
+        ;;
+        
+        6)
+            echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=2160][ext=mp4]+bestaudio[ext=m4a]\"" > ~/.config/youtube-dl/config
+            youtube-dl $1
+            echo -e $G"\n   Finished...\n"$N
+            sleep 1
+            exit
+        ;;
+        
+        7)
+            
+            break
+        ;;
+        
+        *)
+            
+            echo -e "\e[031m \n Worng input! Please Enter again::\n$W"
+    esac
 done
