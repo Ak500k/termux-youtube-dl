@@ -33,7 +33,8 @@ do
 		echo "$command --no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f 'bestaudio[ext=m4a]' --audio-format mp3" > ~/.config/youtube-dl/config #option 1
     	youtube-dl $1
         echo -e $G"\n   Finished...\n"$N
-        kill -1 $PPID
+        sleep 1
+        7
 		;;
 
 	  2)
@@ -41,39 +42,44 @@ do
 		echo "$command --no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f 'bestvideo[height<=360][ext=mp4]+bestaudio[ext=m4a]'" > ~/.config/youtube-dl/config #option 1
     	youtube-dl $1
         echo -e $G"\n   Finished...\n"$N
-        kill -1 $PPID
+        sleep 1
+        7
 		;;
 		
 	  3) 
 		echo "$command --no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f 'bestvideo[height<=480][ext=mp4]+bestaudio[ext=m4a]'" > ~/.config/youtube-dl/config #option 1
     	youtube-dl $1
         echo -e $G"\n   Finished...\n"$N
-        kill -1 $PPID
+        sleep 1
+        7
 		;;
   	  4) 
 		echo "$command --no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f 'bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]'" > ~/.config/youtube-dl/config #option 1
     	youtube-dl $1
         echo -e $G"\n   Finished...\n"$N
-        kill -1 $PPID
+        sleep 1
+        7
 		;;
 	
 	  5)
 		echo "$command --no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f 'bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]'" > ~/.config/youtube-dl/config #option 1
     	youtube-dl $1
         echo -e $G"\n   Finished...\n"$N
-        kill -1 $PPID
+        sleep 1
+        7
 		;;
 
 	  6)
 		echo "$command --no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f 'bestvideo[height<=2160][ext=mp4]+bestaudio[ext=m4a]'" > ~/.config/youtube-dl/config #option 1
     	youtube-dl $1
         echo -e $G"\n   Finished...\n"$N
-        kill -1 $PPID
+        sleep 1
+        7
 		;;
 
 	  7) 
 		break
-        ;;
+        	;;
 		
 	  *)
 	     
