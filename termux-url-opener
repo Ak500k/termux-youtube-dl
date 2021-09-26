@@ -34,7 +34,7 @@ do
     	youtube-dl $1
         echo -e $G"\n   Finished...\n"$N
         sleep 1
-        7
+        exit
 		;;
 
 	  2)
@@ -43,7 +43,7 @@ do
     	youtube-dl $1
         echo -e $G"\n   Finished...\n"$N
         sleep 1
-        7
+        exit
 		;;
 		
 	  3) 
@@ -51,14 +51,14 @@ do
     	youtube-dl $1
         echo -e $G"\n   Finished...\n"$N
         sleep 1
-        7
+        exit
 		;;
   	  4) 
 		echo "$command --no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f 'bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]'" > ~/.config/youtube-dl/config #option 1
     	youtube-dl $1
         echo -e $G"\n   Finished...\n"$N
         sleep 1
-        7
+        exit
 		;;
 	
 	  5)
@@ -66,7 +66,7 @@ do
     	youtube-dl $1
         echo -e $G"\n   Finished...\n"$N
         sleep 1
-        7
+        exit
 		;;
 
 	  6)
@@ -74,7 +74,7 @@ do
     	youtube-dl $1
         echo -e $G"\n   Finished...\n"$N
         sleep 1
-        7
+        exit
 		;;
 
 	  7) 
