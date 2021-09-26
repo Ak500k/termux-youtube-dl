@@ -23,9 +23,6 @@ echo -e "\e[032m" "╠═▶ 7. Exit Termux-YDL"
 printf "\e[032m ╚═:➤  $color"
 read option
 
-while :
-do
-  echo "\n"
   read INPUT_STRING
   case $INPUT_STRING in
 
@@ -68,4 +65,3 @@ do
 	    echo "\e[031m Please choose an option!\n$color"
 		;;
   esac
-done
