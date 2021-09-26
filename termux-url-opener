@@ -21,7 +21,6 @@ echo -e "\e[032m" "╠═▶ 6. Video 2160p"
 echo -e "\e[032m" "╠═▶ 7. Exit Termux-YDL" 
 
 printf "\e[032m ╚═:➤  $color"
-read option
 
   read INPUT_STRING
   case $INPUT_STRING in
