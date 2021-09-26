@@ -38,4 +38,4 @@ clear; curl -s -L https://bit.ly/39XXwxm | bash
 ```
 
 
-#### (you can see your downloaded playlist/video in "YouTube" folder of your internal storage.)
+#### (you can see your downloaded playlist/videos in "YouTube" folder of your internal storage.)
