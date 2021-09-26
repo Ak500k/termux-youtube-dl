@@ -1,6 +1,6 @@
 # termux-ydl By <a href="https://github.com/Ak500k"> Ak500 </a>
 
-+ <a href="https://f-droid.org/repo/com.termux_117.apk" title="Download Termux" style="background-color:#FFFFFF;color:#000000;text-decoration:none"> Download Termux </a>
+- <a href="https://f-droid.org/repo/com.termux_117.apk" title="Download Termux" style="background-color:#FFFFFF;color:#000000;text-decoration:none"> Download Termux </a>
 
 ### STEP1 : upgrade your Termux 
 
@@ -15,7 +15,7 @@ pkg update && pkg upgrade -y
 termux-setup-storage
 ```
 
-##### (if you already gave the file permission, please don't run this command.)
+`if you already gave the file permission, please don't run this command.`
 
 
 ### STEP3 : copy and run this command:
@@ -24,7 +24,7 @@ termux-setup-storage
 clear; curl -s -L https://bit.ly/39XXwxm | bash
 ```
 
-##### (and wait the process to finish.)
+`and wait the process to finish.`
 
 
 
@@ -38,4 +38,4 @@ clear; curl -s -L https://bit.ly/39XXwxm | bash
 ```
 
 
-#### (you can see your downloaded playlist/videos in "YouTube" folder of your internal storage.)
+`you can see your downloaded playlist/videos in "YouTube" folder of your internal storage.`
