@@ -28,7 +28,7 @@ do
   case $INPUT_STRING in
 
 	  1)
-		echo "$command --no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f 'bestaudio[ext=mp3]' --audio-format mp3" > ~/.config/youtube-dl/config #option 1
+		echo "$command --no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f 'bestaudio[ext=m4a]' --audio-format mp3" > ~/.config/youtube-dl/config #option 1
     	youtube-dl $1
 		;;
 
