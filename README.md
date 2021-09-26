@@ -5,7 +5,7 @@
 ## STEP1 : upgrade your Termux 
 
 ```
-pkg upgrade -y
+pkg update && pkg upgrade -y
 ```
 
 
