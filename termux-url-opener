@@ -1,28 +1,44 @@
 #!/data/data/com.termux/files/usr/bin/bash
-clear
-color=$'\e[0m'
+
+#Ak500
+
+# Colors
+# ----------------------------------------
+BL='\e[01;90m' > /dev/null 2>&1; # Black
+R='\e[01;91m' > /dev/null 2>&1; # Red
 G='\e[01;92m' > /dev/null 2>&1; # Green
+Y='\e[01;93m' > /dev/null 2>&1; # Yellow
+B='\e[01;94m' > /dev/null 2>&1; # Blue
+P='\e[01;95m' > /dev/null 2>&1; # Purple
+C='\e[01;96m' > /dev/null 2>&1; # Cyan
+W='\e[01;97m' > /dev/null 2>&1; # White
+LG='\e[01;37m' > /dev/null 2>&1; # Light Gray
+N='\e[0m' > /dev/null 2>&1; # Null
+L='\033[7m' > /dev/null 2>&1; #Lines
+X='\033[0m' > /dev/null 2>&1; #Closer
+# ----------------------------------------
+clear
 
+echo -e $R"             _   _   _   _   _  "$N
+echo -e $R"            / \ / \ / \ / \ / \ "$N
+echo -e $R"           ( A | k | 5 | 0 | 0 )"$N
+echo -e $R"            \_/ \_/ \_/ \_/ \_/ "$N
 
-echo -e "\e[031m" "          ▄▀▄     ▄▀▄"
-echo -e "\e[031m" "         ▄█░░▀▀▀▀▀░░█▄"
-echo -e "\e[031m" "     ▄▄  █░░░░░░░░░░░█  ▄▄"
-echo -e "\e[031m" "    █▄▄█ █░░█░░┬░░█░░█ █▄▄█"
-echo -e "\e[036m" "╔════════════════════════════════════════╗"                                                                          
-echo -e "\e[032m" "║ ♚ Project Name : Termux-YDL            ║"
-echo -e "\e[032m" "║ ♚ Author : Ak500                       ║"
-echo -e "\e[032m" "║ ♚ Github : g̲i̲t̲h̲u̲b̲.̲c̲o̲m̲/̲ak500k/̲          ║"
-echo -e "\e[036m" "╠════════════════════════════════════════╝"
-echo -e "\e[036m" "╠═▶ [𝗦𝗲𝗹𝗲𝗰𝘁 𝗔 𝗙𝗼𝗿𝗺𝗮𝘁]  ➳"
-echo -e "\e[032m" "╠═▶ 1. Music Mp3♫"
-echo -e "\e[032m" "╠═▶ 2. Video 360p"
-echo -e "\e[032m" "╠═▶ 3. Video 480p"
-echo -e "\e[032m" "╠═▶ 4. Video 720p"
-echo -e "\e[032m" "╠═▶ 5. Video 1080p"
-echo -e "\e[032m" "╠═▶ 6. Video 2160p"
-echo -e "\e[032m" "╠═▶ 7. Exit Termux-YDL" 
+echo -e $C "╔════════════════════════════════════════╗"                                                                          
+echo -e $G "║ => Project Name : Termux-YDL            ║"
+echo -e $G "║ => Author : Ak500                       ║"
+echo -e $G "║ => Github : g̲i̲t̲h̲u̲b̲.̲c̲o̲m̲/̲ak500k/̲          ║"
+echo -e $C "╠════════════════════════════════════════╝"
+echo -e $C "╠═▶ [𝗦𝗲𝗹𝗲𝗰𝘁 𝗔 𝗙𝗼𝗿𝗺𝗮𝘁]  ➳"
+echo -e $G "╠═▶ 1. Music Mp3♫"
+echo -e $G "╠═▶ 2. Video 360p"
+echo -e $G "╠═▶ 3. Video 480p"
+echo -e $G "╠═▶ 4. Video 720p"
+echo -e $G "╠═▶ 5. Video 1080p"
+echo -e $G "╠═▶ 6. Video 2160p"
+echo -e $G "╠═▶ 7. Exit Termux-YDL" 
 
-printf "\e[032m ╚═:➤  $color"
+printf "$G ╚═:➤  $color"
 while :
 do
 
@@ -85,4 +101,4 @@ do
 	     
 	    echo -e "\e[031m \n Worng input! Please Enter again::\n$color"
   esac
-  done
+done
