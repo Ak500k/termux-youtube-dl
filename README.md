@@ -28,7 +28,7 @@ clear; curl -s -L https://bit.ly/39XXwxm | bash
 
 
 
-## How to use it to download youtube playlist/video : 
+## How to use it to download youtube playlist/videos : 
 
 
 ```
