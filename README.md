@@ -1,5 +1,9 @@
 # termux-ydl By <a href="https://github.com/Ak500k"> Ak500 </a>
 
+
+
+
+
 - <a href="https://f-droid.org/repo/com.termux_117.apk" title="Download Termux" style="background-color:#FFFFFF;color:#000000;text-decoration:none"> Download Termux </a>
 
 ### STEP1 : upgrade your Termux 
@@ -7,7 +11,7 @@
 ```shell
 pkg update && pkg upgrade -y
 ```
-
+<br>
 
 ### STEP2 : give file permission to Termux
 
@@ -17,6 +21,7 @@ termux-setup-storage
 
 ##### (if you already gave the file permission, please don't run this command.)
 
+<br>
 
 ### STEP3 : copy and run this command:
 
