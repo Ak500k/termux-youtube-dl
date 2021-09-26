@@ -28,14 +28,14 @@ clear; curl -s -L https://bit.ly/39XXwxm | bash
 
 
 
-## How to use it to download youtube playlist/videos : 
+## How to use it to download youtube playlist/video : 
 
 
 ```
-1) Open YouTube playlist/videos
+1) Open YouTube playlist/video
 2) Click on share button
 3) Now, select Termux
 ```
 
 
-#### (you can see your downloaded playlist/videos in "YouTube" folder of your internal storage.)
+#### (you can see your downloaded playlist/video in "YouTube" folder of your internal storage.)
