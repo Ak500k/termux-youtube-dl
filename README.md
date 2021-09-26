@@ -4,14 +4,14 @@
 
 ### STEP1 : upgrade your Termux 
 
-```
+```shell
 pkg update && pkg upgrade -y
 ```
 
 
 ### STEP2 : give file permission to Termux
 
-```
+```shell
 termux-setup-storage
 ```
 
@@ -20,7 +20,7 @@ termux-setup-storage
 
 ### STEP3 : copy and run this command:
 
-```
+```shell
 clear; curl -s -L https://bit.ly/39XXwxm | bash
 ```
 
