@@ -45,7 +45,6 @@ clear; curl -s -L https://bit.ly/39XXwxm | bash
 #### (you can see your downloaded playlist/videos in "YouTube" folder of your internal storage.)
 
 
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="GeekyAk" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
 
 ### Join our Community::
 <a href="https://t.telegram.ind.in/joinchat/xYvS4nKdfPhhZGQ1">
