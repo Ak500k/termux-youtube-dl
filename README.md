@@ -45,7 +45,9 @@ clear; curl -s -L https://bit.ly/39XXwxm | bash
 #### (you can see your downloaded playlist/videos in "YouTube" folder of your internal storage.)
 
 <br>
-### Join our Community:: <br>
+
+### Join our Community::
+
 <a href="https://www.buymeacoffee.com/GeekyAk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
    
 
