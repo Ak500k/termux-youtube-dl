@@ -46,7 +46,7 @@ clear; curl -s -L https://bit.ly/39XXwxm | bash
 
 
 ### Join our Community::
-    <a href="https://t.telegram.ind.in/joinchat/xYvS4nKdfPhhZGQ1">
+   <a href="https://t.telegram.ind.in/joinchat/xYvS4nKdfPhhZGQ1">
     <img width="30px" src="https://www.vectorlogo.zone/logos/telegram/telegram-icon.svg" />
   </a> 
   <a href="https://www.instagram.com/geeky.ak/">
