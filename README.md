@@ -45,7 +45,8 @@ clear; curl -s -L https://bit.ly/39XXwxm | bash
 #### (you can see your downloaded playlist/videos in "YouTube" folder of your internal storage.)
 
 
-### Join our Community:: &ensp; <a href="https://t.telegram.ind.in/joinchat/xYvS4nKdfPhhZGQ1">
+### Join our Community::
+<a href="https://t.telegram.ind.in/joinchat/xYvS4nKdfPhhZGQ1">
     <img width="30px" src="https://www.vectorlogo.zone/logos/telegram/telegram-icon.svg" />
 </a> &ensp;
 <a href="https://www.instagram.com/geeky.ak/">
