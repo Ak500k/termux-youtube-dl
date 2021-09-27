@@ -49,7 +49,7 @@ do
     case $INPUT_STRING in
         
         1)
-            echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestaudio[ext=m4a]\" --audio-format mp3\"" > ~/.config/youtube-dl/config
+            echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestaudio[ext=m4a]\" --audio-format mp3" > ~/.config/youtube-dl/config
             youtube-dl $1
             echo -e $G"\n   Finished...\n"$N
             sleep 1
