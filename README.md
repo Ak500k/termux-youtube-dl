@@ -48,6 +48,6 @@ clear; curl -s -L https://bit.ly/39XXwxm | bash
 ### Join our Community::
    <a href="https://t.telegram.ind.in/joinchat/xYvS4nKdfPhhZGQ1">
     <img width="30px" src="https://www.vectorlogo.zone/logos/telegram/telegram-icon.svg" />
-  </a> 
+  </a> &ensp;
   <a href="https://www.instagram.com/geeky.ak/">
     <img width="30px" src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" />
