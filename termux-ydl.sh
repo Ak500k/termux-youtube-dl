@@ -86,7 +86,7 @@ echo -e $Y$L"\n Updating System...\n"$N
 
  echo -e $Y$L"\n Installing YouTube-dl... \n"$N 
 
-		pip install youtube-dl
+		pip install yt-dlp
 
  clear
 
@@ -102,14 +102,14 @@ echo -e $Y$L"\n Updating System...\n"$N
 
 
  echo -e $Y$L"\n Creating youtube-dl config... \n"$N
-		mkdir -p ~/.config/youtube-dl
+		mkdir -p ~/.config/yt-dlp
  sleep 1.5
 
  echo -e $Y$L"\n Getting config file... \n"$N
 
- wget https://raw.githubusercontent.com/Ak500k/termux-ydl/main/config -P /data/data/com.termux/files/home/.config/youtube-dl
+ wget https://raw.githubusercontent.com/Ak500k/termux-ydl/main/config -P /data/data/com.termux/files/home/.config/yt-dlp
  
- cd /data/data/com.termux/files/home/.config/youtube-dl
+ cd /data/data/com.termux/files/home/.config/yt-dlp
  chmod +x config
 
  sleep 1
