@@ -102,6 +102,7 @@ echo -e $Y$L"\n Updating System...\n"$N
 
 
  echo -e $Y$L"\n Creating youtube-dl config... \n"$N
+		rm -rf /data/data/com.termux/files/home/.config/youtube-dl
 		mkdir -p ~/.config/yt-dlp
  sleep 1.5
 
@@ -121,9 +122,9 @@ echo -e $Y$L"\n Updating System...\n"$N
  sleep 1.5
 
  echo -e $Y$L"\n Getting files...\n"$N
-
+ rm -rf /data/data/com.termux/files/home/bin/termux-url-opener
  wget https://raw.githubusercontent.com/Ak500k/termux-ydl/main/termux-url-opener -P /data/data/com.termux/files/home/bin
- 
+
  cd /data/data/com.termux/files/home/bin
  chmod +x termux-url-opener
  	
