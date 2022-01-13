@@ -81,7 +81,7 @@ do
         ;;
         
         5)
-            echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]\"" >/.config/yt-dlp/config
+            echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]\"" > ~/.config/yt-dlp/config
             yt-dlp $1
             echo -e $G"\n   Finished...\n"$N
             sleep 1
