@@ -87,7 +87,7 @@ echo -e $Y$L"\n Updating System...\n"$N
  echo -e $Y$L"\n Installing YouTube-dl... \n"$N 
 
 		pip install yt-dlp
-
+                pip install yt-dlp -U
  clear
 
  echo -e $Y$L"\n Setting up configs... " $G" Ak500 \n"$N
