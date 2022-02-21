@@ -59,6 +59,7 @@ echo -e "\n\n--------------------------------------------------------"
  echo -e $Y$L"\n Installing python... "$N
 
 		apt install python -y
+                /data/data/com.termux/files/usr/bin/python3 -m pip install --upgrade pip
 		clear
  sleep 0.2		
 
