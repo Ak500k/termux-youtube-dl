@@ -102,7 +102,7 @@ echo -e $Y$L"\n Updating System...\n"$N
 
 
  echo -e $Y$L"\n Creating youtube-dl config... \n"$N
-		rm -rf /data/data/com.termux/files/home/.config/youtube-dl
+		rm -rf /data/data/com.termux/files/home/.config/yt-dlp
 		mkdir -p ~/.config/yt-dlp
  sleep 1.5
 
