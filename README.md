@@ -52,7 +52,8 @@ clear; curl -s -L https://bit.ly/39XXwxm | bash
     <a href="https://www.instagram.com/geeky.ak/">
     <img width="30px" src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" />
 
-
+<br>
+    
 <a href="https://www.buymeacoffee.com/GeekyAk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 
