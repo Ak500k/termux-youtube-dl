@@ -53,6 +53,6 @@ clear; curl -s -L https://bit.ly/39XXwxm | bash
     <img width="30px" src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" />
 
 
-<a href="https://www.buymeacoffee.com/GeekyAk"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=GeekyAk&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"></a>
+ <a href="https://www.buymeacoffee.com/GeekyAk"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=GeekyAk&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"></a>
    
 
