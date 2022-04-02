@@ -19,7 +19,7 @@ pkg update && pkg upgrade -y
 termux-setup-storage
 ```
 
-##### (if you already gave the file permission, please don't run this command.)
+##### (if you already gave the file permission, don't run this command.)
 
 <br>
 
