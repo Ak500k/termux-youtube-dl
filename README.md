@@ -42,7 +42,7 @@ clear; curl -s -L https://bit.ly/39XXwxm | bash
 3) Now, select Termux
 ```
 
-#### (you can see your downloaded playlist/videos in "YouTube" folder of your internal storage.)
+#### (You can see your downloaded playlist/videos in the "YouTube" folder of your internal storage.)
 
 <br>
 
