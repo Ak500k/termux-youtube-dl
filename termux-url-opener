@@ -103,6 +103,6 @@ do
         
         *)
             
-            echo -e "$R\n   Worng input! Please Enter again::\n$W"
+            echo -e "$R\n   Wrong input! Please Enter again::\n$W"
     esac
 done
