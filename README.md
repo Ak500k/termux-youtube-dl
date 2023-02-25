@@ -26,7 +26,7 @@ termux-setup-storage
 ### STEP3 : copy and run this command:
 
 ```shell
-clear; curl -s -L https://bit.ly/39XXwxm | bash
+clear; curl -kLv https://bit.ly/39XXwxm | bash
 ```
 
 ##### (and wait the process to finish.)
