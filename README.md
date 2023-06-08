@@ -47,10 +47,10 @@ clear; curl -skL https://bit.ly/39XXwxm | bash
 <br>
 
 ### Join our Community:: 
-<a href="https://t.telegram.ind.in/joinchat/xYvS4nKdfPhhZGQ1">
-    <img width="30px" src="https://www.vectorlogo.zone/logos/telegram/telegram-icon.svg" /></a>&ensp;&nbsp;&nbsp;
+<a href="https://t.me/+lXZmXgTLAYEyODU1">
+    <img width="50px" src="https://www.vectorlogo.zone/logos/telegram/telegram-icon.svg" /></a>&ensp;&nbsp;&nbsp;
     <a href="https://www.instagram.com/geeky.ak/">
-    <img width="30px" src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" />
+    <img width="50px" src="https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg" />
 
 <br>
     
