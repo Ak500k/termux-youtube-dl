@@ -46,7 +46,7 @@ clear; curl -skL https://bit.ly/39XXwxm | bash
 
 <br>
 
-#### Join our Community:: 
+## Join our Community:: 
 <a href="https://t.me/+lXZmXgTLAYEyODU1">
     <img width="60px" src="https://www.vectorlogo.zone/logos/telegram/telegram-icon.svg" /></a>&ensp;&nbsp;&nbsp;
     <a href="https://www.instagram.com/geeky.ak/">
