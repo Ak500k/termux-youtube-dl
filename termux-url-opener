@@ -30,6 +30,7 @@ echo -e $C "╔═════════════════════�
 echo -e $G "║ ==> Project Name : Termux-YDL           ║"
 echo -e $G "║ ==> Author : Ak500                      ║"
 echo -e $G "║ ==> Github : github.com/ak500k          ║"
+echo -e $G "║ ==> Telegram : @geekyak2                ║"
 echo -e $C "╠════════════════════════════════════════╝"
 echo -e $C "╠═▶ [ Select Format:: ]"
 echo -e $G "╠═▶ [1] Music Mp3♫"
