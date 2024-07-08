@@ -1,93 +1,109 @@
 #!/data/data/com.termux/files/usr/bin/bash
 
-# Function to check and install yt-dlp if not already installed
-check_ytdlp() {
-    if ! command -v yt-dlp &> /dev/null; then
-        echo "yt-dlp not found. Installing..."
-        pkg install python -y
-        pkg install wget -y
-        wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /data/data/com.termux/files/usr/bin/yt-dlp
-        chmod a+rx /data/data/com.termux/files/usr/bin/yt-dlp
-        hash -r
-        echo "yt-dlp installation complete."
-    fi
-}
+#Ak500
 
-# Function to display the menu and handle user input
-show_menu() {
-    clear
-    echo ""
-    echo -e "\e[01;91m             _   _   _   _   _  \e[0m"
-    echo -e "\e[01;91m            / \ / \ / \ / \ / \ \e[0m"
-    echo -e "\e[01;91m           ( A | k | 5 | 0 | 0 )\e[0m"
-    echo -e "\e[01;91m            \_/ \_/ \_/ \_/ \_/ \e[0m"
-    echo -e "\n\e[01;96m ╔══════════════════════════════════════╗\e[0m"
-    echo -e "\e[01;92m ║ ==> Project Name  : Termux-YDL         ║\e[0m"
-    echo -e "\e[01;92m ║ ==> Author        : Ak500              ║\e[0m"
-    echo -e "\e[01;92m ║ ==> Github        : github.com/ak500k  ║\e[0m"
-    echo -e "\e[01;92m ║ ==> Telegram      : @geekyak2          ║\e[0m"
-    echo -e "\e[01;96m ╚══════════════════════════════════════╝\e[0m"
-    echo -e "\e[01;96m ╠═▶ [ Select Format:: ]\e[0m"
-    echo -e "\e[01;92m ╠═▶ [1] Music Mp3♫\e[0m"
-    echo -e "\e[01;92m ╠═▶ [2] Video 360p\e[0m"
-    echo -e "\e[01;92m ╠═▶ [3] Video 480p\e[0m"
-    echo -e "\e[01;92m ╠═▶ [4] Video 720p\e[0m"
-    echo -e "\e[01;92m ╠═▶ [5] Video 1080p\e[0m"
-    echo -e "\e[01;92m ╠═▶ [6] Video 2160p\e[0m"
-    echo -e "\e[01;92m ╠═▶ [7] Exit Termux-YDL\e[0m"
-    echo -e "\e[01;92m ╠\e[0m"
-    echo -ne "\e[01;92m ╚═➤  \e[0m"
-}
+# Colors
+# ----------------------------------------
+BL='\e[01;90m' > /dev/null 2>&1; # Black
+R='\e[01;91m' > /dev/null 2>&1; # Red
+G='\e[01;92m' > /dev/null 2>&1; # Green
+Y='\e[01;93m' > /dev/null 2>&1; # Yellow
+B='\e[01;0m' > /dev/null 2>&1; # Blue
+P='\e[01;95m' > /dev/null 2>&1; # Purple
+C='\e[01;96m' > /dev/null 2>&1; # Cyan
+W='\e[01;0m' > /dev/null 2>&1; # White
+LG='\e[01;37m' > /dev/null 2>&1; # Light Gray
+N='\e[0m' > /dev/null 2>&1; # Null
+L='\033[7m' > /dev/null 2>&1; #Lines
+X='\033[0m' > /dev/null 2>&1; #Closer
+# ----------------------------------------
 
-# Main function to handle user input and download based on selection
-main() {
-    check_ytdlp
-    while true; do
-        show_menu
-        read -r INPUT_STRING
-        case $INPUT_STRING in
-            1)
-                download_video "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestaudio\" --extract-audio --audio-format mp3 --audio-quality 0"
-                ;;
-            2)
-                download_video "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=360][ext=mp4]+bestaudio[ext=m4a]\""
-                ;;
-            3)
-                download_video "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=480][ext=mp4]+bestaudio[ext=m4a]\""
-                ;;
-            4)
-                download_video "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]\""
-                ;;
-            5)
-                download_video "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]\""
-                ;;
-            6)
-                download_video "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=2160][ext=mp4]+bestaudio[ext=m4a]\""
-                ;;
-            7)
-                echo -e "\e[01;92m\n   Exiting Termux-YDL...\n\e[0m"
-                sleep 1
-                exit 0
-                ;;
-            *)
-                echo -e "\e[01;91m\n   Wrong input! Please Enter again::\n\e[0m"
-                sleep 1
-                ;;
-        esac
-    done
-}
+clear
 
-# Function to handle downloading with yt-dlp
-download_video() {
-    local quality="$1"
-    echo "$quality" > ~/.config/yt-dlp/config
-    echo -e "\n\e[01;96m   Enter the URL of the YouTube video:\e[0m"
-    read -r url
-    yt-dlp "$url"
-    echo -e "\e[01;92m\n   Finished...\n\e[0m"
-    sleep 1
-    exit 0
-}
+echo ""
+echo -e $R"             _   _   _   _   _  "$N
+echo -e $R"            / \ / \ / \ / \ / \ "$N
+echo -e $R"           ( A | k | 5 | 0 | 0 )"$N
+echo -e $R"            \_/ \_/ \_/ \_/ \_/ "$N
 
-# Run the main function
-main
+echo -e $C "╔════════════════════════════════════════╗"
+echo -e $G "║ ==> Project Name  :Termux-YDL           ║"
+echo -e $G "║ ==> Author        :Ak500                ║"
+echo -e $G "║ ==> Github        :github.com/ak500k    ║"
+echo -e $G "║ ==> Telegram      :@geekyak2            ║"
+echo -e $C "╠════════════════════════════════════════╝"
+echo -e $C "╠═▶ [ Select Format:: ]"
+echo -e $G "╠═▶ [1] Music Mp3♫"
+echo -e $G "╠═▶ [2] Video 360p"
+echo -e $G "╠═▶ [3] Video 480p"
+echo -e $G "╠═▶ [4] Video 720p"
+echo -e $G "╠═▶ [5] Video 1080p"
+echo -e $G "╠═▶ [6] Video 2160p"
+echo -e $G "╠═▶ [7] Exit Termux-YDL"
+echo -e $G "╠"
+printf "$G ╚═➤  $W"
+
+while :
+do
+    
+    read INPUT_STRING
+    case $INPUT_STRING in
+        
+        1)
+            echo "-x --no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestaudio\" --extract-audio --audio-format mp3 --audio-quality 0" > ~/.config/yt-dlp/config
+            yt-dlp $1
+            echo -e $G"\n   Finished...\n"$N
+            sleep 1
+            exit
+        ;;
+        
+        2)
+            
+            echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=360][ext=mp4]+bestaudio[ext=m4a]\"" > ~/.config/yt-dlp/config
+            yt-dlp $1
+            echo -e $G"\n   Finished...\n"$N
+            sleep 1
+            exit
+        ;;
+        
+        3)
+            echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=480][ext=mp4]+bestaudio[ext=m4a]\"" > ~/.config/yt-dlp/config
+            yt-dlp $1
+            echo -e $G"\n   Finished...\n"$N
+            sleep 1
+            exit
+        ;;
+        4)
+            echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]\"" > ~/.config/yt-dlp/config
+            yt-dlp $1
+            echo -e $G"\n   Finished...\n"$N
+            sleep 1
+            exit
+        ;;
+        
+        5)
+            echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]\"" > ~/.config/yt-dlp/config
+            yt-dlp $1
+            echo -e $G"\n   Finished...\n"$N
+            sleep 1
+            exit
+        ;;
+        
+        6)
+            echo "--no-mtime -o /data/data/com.termux/files/home/storage/shared/YouTube/%(title)s.%(ext)s -f \"bestvideo[height<=2160][ext=mp4]+bestaudio[ext=m4a]\"" > ~/.config/yt-dlp/config
+            yt-dlp $1
+            echo -e $G"\n   Finished...\n"$N
+            sleep 1
+            exit
+        ;;
+        
+        7)
+            
+            break
+        ;;
+        
+        *)
+            
+            echo -e "$R\n   Wrong input! Please Enter again::\n$W"
+    esac
+done
