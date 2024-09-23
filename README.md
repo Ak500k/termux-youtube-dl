@@ -46,8 +46,6 @@ clear; curl -skL https://bit.ly/39XXwxm | bash
 
 <br>
 
-# Join our Community:: 
-<a href="https://telegram.me/+lXZmXgTLAYEyODU1">
     <img width="80px" src="https://www.vectorlogo.zone/logos/telegram/telegram-icon.svg" /></a>&ensp;&nbsp;&nbsp
 
 <br>
